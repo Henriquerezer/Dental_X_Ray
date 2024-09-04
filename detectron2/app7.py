@@ -14,9 +14,12 @@ from PIL import Image
 import openai
 import matplotlib.pyplot as plt
 import base64
+from dotenv import load_dotenv
 
-# Configure sua chave API do OpenAI
-openai.api_key = "sk-vki3PWWrY7-XZ12z_bnRBuDjBD2CWNsrHPZWyUNQRaT3BlbkFJhr0pKqV5AVix6FF3wqnnLJBg86TkzSVL8GDqIJyY0A"
+# API Configurations
+API_KEY_ENV = "OPENAI_API_KEY"
+load_dotenv()
+openai.api_key = os.environ[API_KEY_ENV]
 
 # Função para carregar o arquivo JSON
 def load_json(json_path):

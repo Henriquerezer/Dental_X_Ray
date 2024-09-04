@@ -15,7 +15,7 @@ import openai
 import matplotlib.pyplot as plt
 
 # Configure sua chave API do OpenAI
-openai.api_key = "sk-vki3PWWrY7-XZ12z_bnRBuDjBD2CWNsrHPZWyUNQRaT3BlbkFJhr0pKqV5AVix6FF3wqnnLJBg86TkzSVL8GDqIJyY0A"
+openai.api_key = "YOUR-KEY"
 
 # Função para carregar o arquivo JSON
 def load_json(json_path):
